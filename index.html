@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ispis iz matične knjige rođenih</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #fffbe6;
+    }
+
+    .document {
+      max-width: 800px;
+      margin: auto;
+      border: 10px solid #f0c75e;
+      padding: 20px;
+      background-color: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .header, .footer {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    td, th {
+      border: 1px solid #aaa;
+      padding: 8px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .section-title {
+      background-color: #eee;
+      font-weight: bold;
+      text-align: left;
+      padding: 6px;
+      margin-top: 20px;
+    }
+
+    .note {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    .signature {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="document">
+  <div class="header">
+    <p><strong>BOSNA I HERCEGOVINA<br>FEDERACIJA BOSNE I HERCEGOVINE</strong></p>
+    <p>ŽUPANIJA: <input type="text" placeholder="Županija"> <br>
+       OPĆINA/GRAD: <input type="text" placeholder="Općina/Grad"></p>
+    <h1>ISPIS IZ MATIČNE KNJIGE ROĐENIH</h1>
+  </div>
+
+  <table>
+    <tr>
+      <td>Prezime</td><td><input type="text" placeholder="Prezime"></td>
+      <td>Spol</td><td><input type="text" placeholder="Spol"></td>
+    </tr>
+    <tr>
+      <td>Ime</td><td colspan="3"><input type="text" placeholder="Ime"></td>
+    </tr>
+    <tr>
+      <td>Datum i vrijeme rođenja</td><td colspan="3"><input type="text" placeholder="dd.mm.gggg. u hh:mm"></td>
+    </tr>
+    <tr>
+      <td>Mjesto i općina rođenja</td><td colspan="3"><input type="text" placeholder="Mjesto, općina"></td>
+    </tr>
+    <tr>
+      <td>Država rođenja</td><td colspan="3"><input type="text" placeholder="Država"></td>
+    </tr>
+    <tr>
+      <td>OIB / JMBG</td><td colspan="3"><input type="text" placeholder="Osobni identifikacijski broj"></td>
+    </tr>
+    <tr>
+      <td>Državljanstvo</td><td colspan="3"><input type="text" placeholder="Državljanstvo"></td>
+    </tr>
+    <tr>
+      <td>Nacionalnost</td><td colspan="3"><input type="text" placeholder="Nacionalnost"></td>
+    </tr>
+    <tr>
+      <td>Prebivalište</td><td colspan="3"><input type="text" placeholder="Adresa"></td>
+    </tr>
+  </table>
+
+  <p class="section-title">Podaci o roditeljima</p>
+  <table>
+    <tr><th></th><th>Otac</th><th>Majka</th></tr>
+    <tr>
+      <td>Prezime</td>
+      <td><input type="text" placeholder="Prezime oca"></td>
+      <td><input type="text" placeholder="Prezime majke"></td>
+    </tr>
+    <tr>
+      <td>Ime</td>
+      <td><input type="text" placeholder="Ime oca"></td>
+      <td><input type="text" placeholder="Ime majke"></td>
+    </tr>
+    <tr>
+      <td>Djevojačko prezime majke</td>
+      <td></td>
+      <td><input type="text" placeholder="Djevojačko prezime"></td>
+    </tr>
+    <tr>
+      <td>OIB / JMBG</td>
+      <td><input type="text" placeholder="Identifikacijski broj oca"></td>
+      <td><input type="text" placeholder="Identifikacijski broj majke"></td>
+    </tr>
+  </table>
+
+  <p class="note">
+    <strong>Napomena:</strong> Ovaj ispis iz matične knjige rođenih nema ograničen rok važenja.<br>
+    Za točnost podataka odgovorna je osoba koja koristi ispis u pravne svrhe.
+  </p>
+
+  <div class="signature">
+    <div>
+      <p>Broj: <input type="text" placeholder="Broj"></p>
+      <p>Datum: <input type="text" placeholder="Datum"></p>
+    </div>
+    <div>
+      <p>Matičar: <input type="text" placeholder="Ime matičara"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
